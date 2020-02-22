@@ -1,3 +1,12 @@
+{% extends 'locacao/base.html' %}
+{% block title %}Livro - {{ livro.titulo }}{% endblock %}
+
+{% block content %}
+    <h1>{{ livro.titulo }}</h1>
+    <p>{{ livro.descricao }}</p>
+    <span>{{ livro.pub_date}}</span>
+{% endblock %}
+
 <h1>{{ livro.titulo }}</h1>
 <p>{{ livro.descricao }}</p>
 <span>{{ livro.pub_date}}</span>
